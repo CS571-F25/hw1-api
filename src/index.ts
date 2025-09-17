@@ -12,7 +12,8 @@ app.use(cookies());
 
 const appBundle = CS571Initializer.init(app, {
   allowNoAuth: [],
-  skipAuth: false
+  skipAuth: false,
+  skipCors: false
 });
 
 appBundle.router.addRoutes([

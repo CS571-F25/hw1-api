@@ -3,10 +3,13 @@ WORKDIR /usr/src/app
 
 RUN mkdir /cs571
 
+
+ENV SEMESTER=f25
+ENV PRODUCT=hw1
 ENV ENV_NAME=prod
+ENV PORT=48101
 ENV CS571_PUBLIC_CONFIG_PATH=/cs571/config.prod.public
 ENV CS571_PRIVATE_CONFIG_PATH=/cs571/config.prod.secret
-ENV PORT=48101
 
 COPY LICENSE LICENSE
 COPY tsconfig.json tsconfig.json
